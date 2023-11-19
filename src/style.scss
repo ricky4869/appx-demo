@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $text;
+  font-family: "Noto Sans TC", sans-serif;
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+.appx-input {
+  padding: 0 16px;
+  background-color: $white;
+  border: 1px solid $main;
+  border-radius: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  input,
+  select {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .appx-input__append {
+  }
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 6px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/image/arrow.svg");
+}

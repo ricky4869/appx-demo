@@ -1,0 +1,25 @@
+$main: #f2f2f7;
+$white: #fff;
+$black: #000;
+
+$text: #11263c;
+$note: #737791;
+$hover: #d8ddeb;
+
+@mixin scrollbar-style($weight, $color) {
+  &::-webkit-scrollbar {
+    width: $weight;
+    height: $weight;
+  }
+  &::-webkit-scrollbar-thumb {
+    transition: 0.3s background-color;
+    background-color: rgba($color: $note, $alpha: 0.5);
+    border: calc($weight / 5) solid $color;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 100px;
+
+    background: $color;
+  }
+}
