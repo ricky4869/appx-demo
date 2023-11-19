@@ -331,12 +331,10 @@ onMounted(async () => {
           margin: 0 6px;
           font-size: 14px;
           height: 32px;
-          &:v-deep {
-            .appx-select {
-              &__input {
-                padding: 0 6px;
-                border-radius: 6px;
-              }
+          &:deep(.appx-select) {
+            .appx-select__input {
+              padding: 0 6px;
+              border-radius: 6px;
             }
           }
         }

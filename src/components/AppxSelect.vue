@@ -140,7 +140,6 @@ const handleClick = () => {
       margin-left: 14px;
       .arrow-icon {
         transform: rotate(0);
-
         transition: 0.3s all;
         &--open {
           transform: rotate(180deg);
